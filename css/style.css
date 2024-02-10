@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif; 
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(270deg, #1B1B1B 9.9%, #1B1B1B 89.27%);
+    border-radius: 0 0 3rem 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-header-container {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;  
+}
+
+.logo-img-header {
+    height: 6vh;
+    min-height: 4vh;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 95vh 70vh 90vh;
+    max-height: 255vh;
+}
+
+.section1 {
+    margin: 0 10vw;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 60% 40%;
+}
+
+.leftcontent-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3.6rem;
+}
+
+.leftcontent-section1 h1 {
+    font-size: 7.5rem;
+    line-height: 1;
+    white-space: nowrap;
+    color: rgba(27, 27, 27, 1);
+}
+
+.leftcontent-section1 p {
+    font-size: 3rem;
+    max-height: 11.9rem;
+    min-width: 39.5rem;
+    width: 60%;
+    color: rgba(85, 85, 85, 1);
+} 
+
+.leftcontent-section1 button {
+    height: 4.6rem;
+    width: 48%;
+    border: none;
+    border-radius: 0 3rem 0 3rem;
+    background: rgba(27, 27, 27, 1);
+    color: rgba(242, 242, 242, 1);
+    font-size: 1.8rem;
+    min-width: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.leftcontent-section1 button:hover {
+    opacity: 0.9;
+}
+
+.leftcontent-section1 button img {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.section2 {
+    background-color: #555555;
+}
+
+.section3 {
+    margin: 0 10vw;
+}
