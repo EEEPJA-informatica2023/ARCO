@@ -76,13 +76,13 @@ main {
 
 .leftcontent-section1 button {
     height: 4.6rem;
-    width: 48%;
+    width: 32rem;
+    min-width: 26rem;
     border: none;
     border-radius: 0 3rem 0 3rem;
     background: rgba(27, 27, 27, 1);
     color: rgba(242, 242, 242, 1);
-    font-size: 1.8rem;
-    min-width: 26rem;
+    font-size: 2.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,8 +96,8 @@ main {
 }
 
 .leftcontent-section1 button img {
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 2.8rem;
+    width: 2.8rem;
 }
 
 .section2 {
@@ -106,4 +106,17 @@ main {
 
 .section3 {
     margin: 0 10vw;
+}
+
+.first-column-images {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    position: absolute;
+    top: 15vh;
+    right: 8vw;
+}
+
+.images-colagem {
+    width: 30%;
 }
