@@ -108,15 +108,46 @@ main {
     margin: 0 10vw;
 }
 
-.first-column-images {
-    display: flex;
-    justify-content: flex-end;
-    gap: 4rem;
+.mural-images {
     position: absolute;
     top: 15vh;
-    right: 8vw;
+    right: -6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .images-colagem {
-    width: 30%;
+    width: 11vw;
+    min-width: 136.6px;
+}
+
+.first-column-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.second-column-images {
+    margin-left: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.third-column-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.four-column-images {
+    margin-left: 11rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
