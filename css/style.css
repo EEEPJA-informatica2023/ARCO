@@ -60,7 +60,7 @@ main {
 }
 
 .leftcontent-section1 h1 {
-    font-size: 7.5rem;
+    font-size: 8.5rem;
     line-height: 1;
     white-space: nowrap;
     color: rgba(27, 27, 27, 1);
@@ -111,16 +111,16 @@ main {
 .mural-images {
     position: absolute;
     top: 15vh;
-    right: -23rem;
+    right: -5rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
 .images-colagem {
-    width: 23%;
+    width: 12.4vw;
     min-width: 136.6px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .first-column-images {
