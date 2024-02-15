@@ -41,8 +41,8 @@ body {
 main {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 95vh 70vh 90vh;
-    max-height: 255vh;
+    grid-template-rows: 95vh 80vh 90vh;
+    max-height: 265vh;
 }
 
 .section1 {
@@ -102,6 +102,36 @@ main {
 
 .section2 {
     background-color: #555555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.upside-content {
+    background-color: aqua;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    & h2 {
+        font-size: 3.5rem;
+    }
+    & input {
+        width: 38vw;
+        height: 6vh;
+        background-color: #F2F2F2;
+        border: none;
+        border-radius: 0 1.5rem 0 1.5rem;
+        padding: 2rem 4rem;
+    }
+}
+
+.swiper {
+    height: 100%;
 }
 
 .section3 {
