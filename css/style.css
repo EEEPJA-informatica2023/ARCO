@@ -150,8 +150,11 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
-    overflow-x: hidden;
     flex-shrink: 0;
+    transition: transform 0.5s ease;
+    justify-content: flex-start; /* Garante que os cards comecem no canto esquerdo do contêiner */
+    padding-left: 2rem; /* Espaçamento à esquerda para evitar que os cards fiquem cortados */
+    box-sizing: content-box; /* Garante que o padding não afete a largura total do contêiner */
 }
 
 .card-carrosel {
@@ -161,7 +164,6 @@ main {
     height: 45vh;
     background-color: #fff;
     border-radius: 0 1.8rem  0 1.8rem;
-    transform: translate(-31.7vw);
     & .card-carrosel-upContent {
         border-bottom: 1px solid #9E9E9E;
         width: 100%;
@@ -204,21 +206,23 @@ main {
     }
     & .btn1-carrosel {
         background-color: #fff;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 50%;    
+        cursor: pointer;
     }
     & .btn2-carrosel {
         background-color: #000;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50%;    
+        border-radius: 50%;
+        cursor: pointer;
     }
 
 }
