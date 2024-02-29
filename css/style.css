@@ -310,6 +310,11 @@ main {
 
     main {
         display: none;
+        overflow: hidden;
+    }
+
+    .mural-images {
+        display: none;
     }
 
     .container-protecao-tela-menores{
