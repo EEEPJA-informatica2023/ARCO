@@ -11,6 +11,10 @@ html {
     font-size: 62.5%;
 }
 
+.container-protecao-tela-menores {
+    display: none;
+}
+
 header {
     position: absolute;
     width: 100vw;
@@ -295,4 +299,40 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+}
+
+@media (max-width: 820px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    main {
+        display: none;
+    }
+
+    .container-protecao-tela-menores{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        z-index: 2;
+        position: absolute;
+        text-align: center;
+        gap: 2rem;
+        & .container-h1-protetor-tela {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            font-size: 2rem;
+        }
+        & .container-p-protetor-tela {
+            font-size: 1.8rem;
+        }
+    }
 }
