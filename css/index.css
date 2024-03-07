@@ -1,41 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Space Grotesk', sans-serif; 
-}
-
-html {
-    font-size: 62.5%;
-}
-
-.container-protecao-tela-menores {
-    display: none;
-}
-
-header {
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
-    background: linear-gradient(270deg, #1B1B1B 9.9%, #1B1B1B 89.27%);
-    border-radius: 0 0 3rem 3rem;
-    display: flex;
-    justify-content: center;
-}
-
-.logo-header-container {
-    width: 80vw;
-    display: flex;
-    justify-content: flex-start;  
-    align-items: center;  
-}
-
-.logo-img-header {
-    height: 6vh;
-    min-height: 4vh;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700display=swap');
 
 body {
     overflow-x: hidden;
@@ -115,16 +78,18 @@ main {
     width: 100%;
     height: 30%;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    & h2 {
+    overflow-y: hidden;
+    h2 {
         font-size: 3.5rem;
         color: #fff;
     }
-    & .input-autores-div {
+    .input-autores-div {
         display: flex;
-        & .container-lupa-icon{
+        .container-lupa-icon{
             background-color: #1B1B1B;
             width: 3.3vw;
             border-radius: 0 1.5rem 0 0;
@@ -132,11 +97,11 @@ main {
             min-width: 45px;
             justify-content: center;
             align-items: center;
-            & img{
+            img{
                 width: 60%;
             }
         }
-        & input {
+        input {
             width: 38vw;
             height: 6vh;
             background-color: #F2F2F2;
@@ -167,7 +132,7 @@ main {
     height: 37vh;
     background-color: #fff;
     border-radius: 0 1.8rem  0 1.8rem;
-    & .card-carrosel-upContent {
+    .card-carrosel-upContent {
         width: 100%;
         height: 43%;
         display: flex;
@@ -175,27 +140,27 @@ main {
         gap: 2rem;
         align-items: center;
         margin-bottom: 1rem;
-        & img {
+        img {
             width: 5vw;
         }
-        & .card-carrosel-headers-container{
+        .card-carrosel-headers-container{
             display: flex;
             flex-direction: column;
             align-content: center;
             justify-content: center;
             height: 100%;
             width: 100%;
-            & h3 {
+            h3 {
                 font-size: 1.8vw;
                 color: #1B1B1B;
             }
-            & h4 {
+            h4 {
                 font-size: 1.3vw;
                 color: #9E9E9E;
             }
         }
     }
-    & .card-carrosel-downContent {
+    .card-carrosel-downContent {
         border-top: 1px solid #9E9E9E;
         width: 100%;
         height: 54%;
@@ -203,11 +168,11 @@ main {
         align-items: center;
         justify-content: center;
         padding: 1rem;
-        & p {
+        p {
             font-size: 1.5vw;
                     
         }
-        & .bigText_card{
+        .bigText_card{
             font-size: 1.15vw;
         }
     }
@@ -227,10 +192,10 @@ main {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    & img {
+    img {
         width: 35%;
     }
-    & .btn1-carrosel {
+    .btn1-carrosel {
         background-color: #fff;
         width: 4rem;
         height: 4rem;
@@ -240,7 +205,7 @@ main {
         border-radius: 50%;    
         cursor: pointer;
     }
-    & .btn2-carrosel {
+    .btn2-carrosel {
         background-color: #000;
         width: 4rem;
         height: 4rem;
@@ -269,13 +234,13 @@ main {
     align-items: center;
     text-align: center;
     padding: 2rem;
-    & h2 {
+    h2 {
         font-size: 4rem;
     }
-    & p {
+    p {
         font-size: 2.3rem;
     }
-    & img {
+    img {
         width: 70%;
         height: 70%;
         object-fit: cover;
@@ -356,14 +321,14 @@ main {
         position: absolute;
         text-align: center;
         gap: 2rem;
-        & .container-h1-protetor-tela {
+        .container-h1-protetor-tela {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 2rem;
             font-size: 2rem;
         }
-        & .container-p-protetor-tela {
+        .container-p-protetor-tela {
             font-size: 1.8rem;
         }
     }
@@ -381,13 +346,13 @@ footer {
     place-items: center;
     padding: 0 10vw;
     text-align: center;
-    & img {
+    img {
         width: 80%;
     }
-    & div {
+    div {
         color: rgba(242, 242, 242, 1);
         font-size: 1.3vw;
-        & a {
+        a {
             color: rgba(242, 242, 242, 1);
         }
         ul {
@@ -397,10 +362,8 @@ footer {
             gap: 1rem;
         }
     }    
+    .div1 { grid-area: 3 / 1 / 4 / 2; }
+    .div2 { grid-area: 3 / 2 / 4 / 3; }    
+    .div3 { grid-area: 3 / 3 / 4 / 4; }
+    .div5 { grid-area: 4 / 1 / 5 / 5; }
 }
-
-.div1 { grid-area: 3 / 1 / 4 / 2; }
-.div2 { grid-area: 3 / 2 / 4 / 3; }    
-.div3 { grid-area: 3 / 3 / 4 / 4; }
-.div5 { grid-area: 4 / 1 / 5 / 5; }
-    
