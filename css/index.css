@@ -337,8 +337,8 @@ footer {
     main {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 96vh 70vh 96vh;
-    max-height: 262vh;
+    grid-template-rows: 96vh 70vh 80vh;
+    max-height: 246vh;
     overflow-x: hidden;
     }
     
@@ -464,7 +464,7 @@ footer {
         margin-left: 4rem;
         padding: 1.8rem;
         min-width: clamp(300px, 320px, 400px);
-        height: clamp(280px, 300px, 320px);
+        height: clamp(260px, 280px, 300px);
         background-color: #fff;
         border-radius: 0 1.8rem  0 1.8rem;
         .card-carrosel-upContent {
@@ -486,11 +486,11 @@ footer {
                 height: 100%;
                 width: 100%;
                 h3 {
-                    font-size: clamp(1.7rem, 1.9rem, 2.3rem);
+                    font-size: clamp(1.9rem, 2.1rem, 2.5rem);
                     color: #1B1B1B;
                 }
                 h4 {
-                    font-size: clamp(1.3rem, 1.5rem, 1.9rem);
+                    font-size: clamp(1.5rem, 1.7rem, 2.1rem);
                     color: #9E9E9E;
                 }
             }
@@ -511,6 +511,38 @@ footer {
             }
         }
     }
+
+    .section3 {
+        margin: 0 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .content-section3 {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        h2 {
+            font-size: 2.8rem;
+        }
+        p {
+            font-size: 1.8rem;
+        }
+        img {
+            height: 40%;
+            width: 100vw;
+            object-fit: cover;
+            border-radius: 0;
+        }
+    }
+
     footer {
         height: 20vh;
         div {
