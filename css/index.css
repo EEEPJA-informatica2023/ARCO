@@ -337,8 +337,9 @@ footer {
     main {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 110vh 87vh 96vh;
-    max-height: 293vh;
+    grid-template-rows: 96vh 70vh 96vh;
+    max-height: 262vh;
+    overflow-x: hidden;
     }
     
     .section1 {
@@ -398,39 +399,6 @@ footer {
         width: 20vw;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     }
-    
-    .first-column-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        position: relative;
-        right: -100px;
-    }
-    
-    .second-column-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        
-    }
-    
-    .third-column-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-    }
-    
-    .four-column-images {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        position: relative;
-        left: -100px;
-    }
 
     .section2 {
         background-color: #555555;
@@ -450,7 +418,7 @@ footer {
         align-items: center;
         overflow-y: hidden;
         h2 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             color: #fff;
             text-align: center;
         }
@@ -495,8 +463,8 @@ footer {
     .card-carrosel {
         margin-left: 4rem;
         padding: 1.8rem;
-        min-width: 70vw;
-        height: 37vh;
+        min-width: clamp(300px, 320px, 400px);
+        height: clamp(280px, 300px, 320px);
         background-color: #fff;
         border-radius: 0 1.8rem  0 1.8rem;
         .card-carrosel-upContent {
@@ -508,7 +476,7 @@ footer {
             align-items: center;
             margin-bottom: 1rem;
             img {
-                width: 12vw;
+                width: clamp(6rem, 14vw, 7rem);
             }
             .card-carrosel-headers-container{
                 display: flex;
@@ -518,11 +486,11 @@ footer {
                 height: 100%;
                 width: 100%;
                 h3 {
-                    font-size: 5vw;
+                    font-size: clamp(1.7rem, 1.9rem, 2.3rem);
                     color: #1B1B1B;
                 }
                 h4 {
-                    font-size: 3vw;
+                    font-size: clamp(1.3rem, 1.5rem, 1.9rem);
                     color: #9E9E9E;
                 }
             }
@@ -536,11 +504,17 @@ footer {
             justify-content: center;
             padding: 1rem;
             p {
-                font-size: 3.5vw;
+                font-size: clamp(20px, 90%, max(30px));
             }
             .bigText_card{
-                font-size: 1.15vw;
+                font-size: clamp(16px, 50%, max(99%, 29px));
             }
+        }
+    }
+    footer {
+        height: 20vh;
+        div {
+            font-size: 1rem;
         }
     }
 }
