@@ -308,7 +308,6 @@ footer {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     place-items: center;
-    padding: 0 10vw;
     text-align: center;
     img {
         width: 80%;
@@ -333,7 +332,6 @@ footer {
 }
 
 @media (max-width: 1000px){
-    
     main {
     display: grid;
     grid-template-columns: 100vw;
@@ -341,13 +339,12 @@ footer {
     max-height: 246vh;
     overflow-x: hidden;
     }
-    
     .section1 {
         margin: 0 10vw;
         display: grid;
         grid-template-rows: 60% 40%;
         grid-template-columns: 100%;
-        margin-top: 10vh;
+        margin-top: 8vh;
         padding: 2rem;
         text-align: center;
     }
@@ -567,9 +564,9 @@ footer {
     }
 
     footer {
-        height: 20vh;
+        height: 30vh;
         div {
-            font-size: 1rem;
+            font-size: clamp(1rem, 1.4rem, 1.7rem);
         }
     }
 }

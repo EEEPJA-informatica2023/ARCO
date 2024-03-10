@@ -91,10 +91,3 @@ document.addEventListener("DOMContentLoaded", () => {
         `
     }
 })
-
-const first_row_image = document.querySelector(".first-row-images")
-const second_row_image = document.querySelector(".second-row-images")
-
-setInterval(() => {
-    first_row_image.style.transform = `translateX(${window.scrollX}px)`; 
-},500)

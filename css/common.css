@@ -47,7 +47,6 @@ footer {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     place-items: center;
-    padding: 0 10vw;
     text-align: center;
     img {
         width: 80%;
@@ -72,12 +71,32 @@ footer {
 }
 
 @media (max-width: 1000px) {
-    footer {
-        height: 20vh;
-        div {
-            font-size: 1rem;
+    header {
+        position: absolute;
+        width: 100vw;
+        height: 8vh;
+        background: linear-gradient(270deg, #1B1B1B 9.9%, #1B1B1B 89.27%);
+        border-radius: 0 0 3rem 3rem;
+        display: flex;
+        justify-content: center;
+        .logo-header-container {
+            width: 80vw;
+            display: flex;
+            justify-content: flex-start;  
+            align-items: center;  
         }
-    } 
+        
+        .logo-img-header {
+            height: 40%;
+        }    
+    }
+    
+    footer {
+        height: 30vh;
+        div {
+            font-size: clamp(0.9rem, 1.3rem, 1.5rem);
+        }
+    }
 } 
 
 
