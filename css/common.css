@@ -71,53 +71,13 @@ footer {
     .div5 { grid-area: 4 / 1 / 5 / 5; }
 }
 
-/* @media (max-width: 1000px) {
-    body {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    header {
-        display: none;
-    }
-
-    main {
-        display: none;
-        overflow: hidden;
-    }
-
+@media (max-width: 1000px) {
     footer {
-        display: none;
-    }
-    
-    .mural-images {
-        display: none;
-    }
-
-    .container-protecao-tela-menores{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        background-color: #fff;
-        z-index: 2;
-        position: absolute;
-        text-align: center;
-        gap: 2rem;
-        .container-h1-protetor-tela {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 2rem;
-            font-size: 2rem;
+        height: 20vh;
+        div {
+            font-size: 1rem;
         }
-        .container-p-protetor-tela {
-            font-size: 1.8rem;
-        }
-    }
-} */
+    } 
+} 
 
 

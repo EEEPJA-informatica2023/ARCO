@@ -5,35 +5,59 @@ document.addEventListener("DOMContentLoaded", function() {
     const prevButton = document.querySelector(".btn1-carrosel");
     const nextButton = document.querySelector(".btn2-carrosel");
 
-    const cardWidth = document.querySelector(".card-carrosel").offsetWidth; // Largura do card
-    const cardMargin = 20; // Espaçamento entre os cards
-
     let position = 0;
-    const wrapperWidth = document.querySelector(".section2").offsetWidth;
-    const numCards = document.querySelectorAll(".card-carrosel").length;
-    const totalWidth = (cardWidth + cardMargin) * numCards - cardMargin; // Largura total dos cards
+    let cardWidth;
+    let cardMargin;
+    let wrapperWidth;
+    let numCards;
+    let totalWidth;
+
+    function updateDimensions() {
+        cardWidth = document.querySelector(".card-carrosel").offsetWidth; // Largura do card
+        cardMargin = 40; // Espaçamento entre os cards
+        wrapperWidth = document.querySelector(".section2").offsetWidth;
+        numCards = document.querySelectorAll(".card-carrosel").length;
+        totalWidth = (cardWidth + cardMargin) * numCards - cardMargin; // Largura total dos cards
+    }
 
     function moveCarousel() {
         carousel.style.transform = `translateX(${position}px)`;
     }
-    nextButton.addEventListener("click", function() {
-      const maxPosition = wrapperWidth - totalWidth - 1100; // Posição máxima com margem de segurança
+
+    function nextSlide() {
+        const maxPosition = wrapperWidth - totalWidth - 700; // Posição máxima com margem de segurança
         if (position > maxPosition) {
             position -= cardWidth + cardMargin; // Mover para o próximo card
             if (position < maxPosition) {
-              position = maxPosition; // Ajustar para a posição máxima se necessário
+                position = maxPosition; // Ajustar para a posição máxima se necessário
             }
             moveCarousel();
         }
-    });
-    prevButton.addEventListener("click", function() {
+    }
+
+    function prevSlide() {
         if (position < 0) {
             position += cardWidth + cardMargin; // Mover para o card anterior
             if (position > 0) {
-              position = 0; // Ajustar para a posição inicial se necessário
+                position = 0; // Ajustar para a posição inicial se necessário
             }
             moveCarousel();
         }
+    }
+
+    nextButton.addEventListener("click", nextSlide);
+    prevButton.addEventListener("click", prevSlide);
+
+    window.addEventListener("resize", () => {
+        updateDimensions();
+        moveCarousel();
+    });
+
+    updateDimensions();
+
+    const botaoSection1 = document.querySelector(".btn-section1");
+    botaoSection1.addEventListener("click", () => {
+        window.scroll(0, 550);
     });
 });
 
@@ -47,6 +71,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const mural_imagens = document.getElementById("mural-images")
 
     if(screen_width <= 1000){
-        mural_imagens.innerHTML = ""
+        mural_imagens.innerHTML = `
+        <div class="mural-images" id="mural-images">
+        <div class="first-row-images">
+            <img src="images/pessoa1.png" alt="foto do Ailton Krenak" class="images-colagem">
+            <img src="images/pessoa2.png" alt="foto do Chico Science" class="images-colagem">
+            <img src="images/pessoa5.png" alt="foto do Ailton Krenak" class="images-colagem">
+            <img src="images/pessoa6.png" alt="foto do Chico Science" class="images-colagem">
+            <img src="images/pessoa7.png" alt="foto do Chico Science" class="images-colagem">
+        </div>
+        <div class="second-row-images">
+            <img src="images/pessoa3.png" alt="foto do Ailton Krenak" class="images-colagem">
+            <img src="images/pessoa4.png" alt="foto do Chico Science" class="images-colagem">
+            <img src="images/pessoa8.png" alt="foto do Ailton Krenak" class="images-colagem">
+            <img src="images/pessoa9.png" alt="foto do Chico Science" class="images-colagem">
+            <img src="images/pessoa10.png" alt="foto do Chico Science" class="images-colagem">
+        </div>
+    </div>   
+        `
     }
 })
+
+const first_row_image = document.querySelector(".first-row-images")
+const second_row_image = document.querySelector(".second-row-images")
+
+setInterval(() => {
+    first_row_image.style.transform = `translateX(${window.scrollX}px)`; 
+},500)

@@ -268,14 +268,14 @@ main {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
-.first-column-images {
+.first-row-images {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.second-column-images {
+.second-row-images {
     margin-left: 11rem;
     display: flex;
     justify-content: center;
@@ -283,14 +283,14 @@ main {
     gap: 1rem;
 }
 
-.third-column-images {
+.third-row-images {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
 
-.four-column-images {
+.four-row-images {
     margin-left: 11rem;
     display: flex;
     justify-content: center;
@@ -389,10 +389,34 @@ footer {
         padding: 0.5rem;
     }
 
+    .rightcontent-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .first-row-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    }
+
+    .second-row-images {
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    }
+
     .mural-images {
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 1rem;
     }
     
     .images-colagem {
@@ -456,7 +480,6 @@ footer {
         flex-shrink: 0;
         transition: transform 0.5s ease;
         justify-content: flex-start; 
-        padding-left: 2rem; 
         box-sizing: content-box; 
     }
     
@@ -550,3 +573,4 @@ footer {
         }
     }
 }
+
