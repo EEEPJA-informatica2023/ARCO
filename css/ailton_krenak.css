@@ -114,7 +114,7 @@ main {
     main {
         display: grid;
         grid-template-columns: 100vw;
-        grid-template-rows: 140vh 90vh 140vh;
+        grid-template-rows: 140vh 90vh 160vh;
     }
     
     .section1 {
