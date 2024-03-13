@@ -1,5 +1,12 @@
 "use strict";
 
+let margem_seguranca
+if( window.innerWidth > 1000){
+    margem_seguranca = 700
+}else{
+    margem_seguranca = 200
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const carousel = document.querySelector(".carrosel-menu-container");
     const prevButton = document.querySelector(".btn1-carrosel");
@@ -25,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function nextSlide() {
-        const maxPosition = wrapperWidth - totalWidth - 700; // Posição máxima com margem de segurança
+        const maxPosition = wrapperWidth - totalWidth - margem_seguranca; // Posição máxima com margem de segurança
         if (position > maxPosition) {
             position -= cardWidth + cardMargin; // Mover para o próximo card
             if (position < maxPosition) {
