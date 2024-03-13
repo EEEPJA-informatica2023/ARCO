@@ -1,10 +1,58 @@
 main {
-    padding-top: 15vh;
+    padding: 12vh 0;
     display: flex;
     flex-direction: column;
-    gap: 7rem;
-    justify-content: flex-start;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 10vw;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.container-listas {
+    display: flex;
+    gap: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+li {
+    font-size: 2rem;
+}
+
+.listas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .container-listas {
+        display: flex;
+        gap: 3rem;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+    }
+    
+    li {
+        font-size: 1.8rem;
+    }
+    
+    .listas {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

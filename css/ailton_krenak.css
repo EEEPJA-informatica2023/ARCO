@@ -1,0 +1,224 @@
+main {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 90vh 100vh;
+}
+
+.section1 {
+    display: grid;
+    margin: 0 10vw;
+    margin-top: 10vh;
+    grid-template-columns: 50% 50%;
+}
+
+.leftcontent-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem; 
+}
+
+.section1-h1 {
+    font-size: 5rem;
+}
+
+.section1-p {
+    font-size: 2rem;
+}
+
+.image-ailtonKrenak {
+    width: 80%;
+}
+
+.rightcontent-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 {
+    background-color: #555555;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10vw;
+    color: #fff;
+}
+
+.containerh2-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerh2-section2 h2 {
+    font-size: 4rem;
+}
+
+.containerP-section2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.containerP-section2 p {
+    font-size: 2.1rem;
+}
+
+.section3 {
+    margin: 0 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section3 h2 { 
+    font-size: 4rem;
+}
+
+.container-obras {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 2rem;
+}
+
+.container-obra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.container-obra h3 {
+    font-size: 2rem;
+}
+
+.container-obra div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-size: 1.4rem;
+}
+
+.container-obra div img {
+    width: 40%;
+}
+
+@media (max-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows: 140vh 90vh 140vh;
+    }
+    
+    .section1 {
+        display: grid;
+        margin: 0 10vw;
+        margin-top: 10vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+    }
+    
+    .leftcontent-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem; 
+    }
+    
+    .section1-h1 {
+        font-size: 5rem;
+    }
+    
+    .section1-p {
+        font-size: 2rem;
+    }
+    
+    .image-ailtonKrenak {
+        width: max(90%);
+    }
+    
+    .rightcontent-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section2 {
+        background-color: #555555;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 10vw;
+        color: #fff;
+    }
+    
+    .containerh2-section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .containerh2-section2 h2 {
+        font-size: 4rem;
+    }
+    
+    .containerP-section2 {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .containerP-section2 p {
+        font-size: clamp(1rem, 1.3rem, 1.7rem);
+    }
+    
+    .section3 {
+        margin: 0 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .section3 h2 { 
+        font-size: 3rem;
+    }
+    
+    .container-obras {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
+        gap: 3rem;
+    }
+    
+    .container-obra {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+    .container-obra h3 {
+        font-size: 2rem;
+    }
+    .container-obra div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.3rem;
+        font-size: clamp(1.1rem, 1.5rem, 1.6rem);
+    }
+    .container-obra div img {
+        width: 33%;
+    }
+}
